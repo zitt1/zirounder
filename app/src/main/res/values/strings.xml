@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">zirounder</string>
+    <string name="app_name_ru">zirounder</string>
+    <string name="overlay_service_title">zirounder активен</string>
+    <string name="overlay_service_desc">Скругление углов работает</string>
+    <string name="permission_overlay_title">Разрешение поверх остальных окон</string>
+    <string name="permission_overlay_desc">Для отображения скругленных углов требуется разрешение "Поверх других окон"</string>
+</resources>
