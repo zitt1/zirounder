@@ -1,0 +1,6 @@
+{
+  "name": "zirounder",
+  "description": "Простое и легкое скругление углов экрана",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

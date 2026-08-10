@@ -1,29 +1,22 @@
-# zirounder (RU)
-zirounder — легкое и минималистичное приложение для скругления углов экрана на Android.
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-✨ Основные возможности:
+# Run and deploy your AI Studio app
 
-📐 Стандартный радиус скругления: По умолчанию установлен оптимальный радиус 15px (с поддержкой ручной настройки и раздельной регулировки для всех 4 углов).
+This contains everything you need to run your app locally.
 
-🌐 Двуязычный интерфейс (RU / EN): Удобный стартовый экран onboarding с выбором языка и мгновенным запросом всех необходимых системных разрешений.
+View your app in AI Studio: https://ai.studio/apps/46432faa-e159-4dc6-958d-ef9a2d2e49b3
 
-⚡ Легковесность и автономность: Никаких тяжелых фоновых уведомлений и ненужной нагрузки на систему.
+## Run Locally
 
-🎨 Кастомизация вида: Выбор формы скругления (классический круг, суперэллипс Squircle, фасетный Notch), цвета (включая чистый AMOLED черный #000000) и прозрачности.
+**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
 
-🔋 Автоматическая пауза: При блокировке и выключении экрана служба засыпает для сбережения аккумулятора.
 
-# zirounder (EN)
-zirounder is a lightweight, clean, and simple screen corner rounding utility for Android.
-
-✨ Features:
-
-📐 Standard Corner Radius: Comes configured with a clean 15px radius out of the box (with full custom control for all 4 corners).
-
-🌐 Multi-language Support (RU / EN): Onboarding setup screen with language selection and instant 1-tap permission setup.
-
-⚡ Ultra Lightweight: Clean background execution without annoying system notification banners or unnecessary overhead.
-
-🎨 Visual Customization: Choose corner shapes (Classic Round, Squircle, Chamfer Notch), custom overlay colors (including pure AMOLED #000000), and opacity.
-
-🔋 Smart Screen Off Pause: Automatically pauses when the screen is turned off to save battery.
+1. Open Android Studio
+2. Select **Open** and choose the directory containing this project
+3. Allow Android Studio to fix any incompatibilities as it imports the project.
+4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
+5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
+6. Run the app on an emulator or physical device
+7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
